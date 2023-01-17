@@ -1,0 +1,17 @@
+/*para el diseño responsive no solo tenemos que tener en cuenta los tamaños sino tb toda la experiencia ya que de acuedo al dispositivo 1px x ejemplo puede vales + de 1 px*/
+body{padding: 20px;margin: 0;}
+/*.escenario1{margin: 10px 0px; border: 1px solid #ccc;padding: 10px;width: 100%;}
+.escenario2{margin: 10px 0px; border: 1px solid #ccc;padding: 10px;width: 100%;}*/
+.escenario{ border: 1px solid rgb(30, 17, 17);padding: 10px;}
+.escenario1{font-size: 32px;}
+.escenario2{font-size: 32px;}/*16 pixeles tiene por defecto*/
+.em{background-color: rgb(223, 26, 26);font-size: 10em;}/*hace referencia al tamaño de fuente de su contenedor*/
+/**/
+.rem{background-color: rgb(240, 240, 71);font-size: 20rem;}/*hace referencia al tamaño de fuente NO de su contenedor SINO DE LA RAÍZ*/
+
+/*CON REM Y EM TODO EMPEZARA A ESCALARSE EN RELACIÓN A ESA FUENTE QUE TENGAMOS CONTENIDA DENTRO DE NUESTRO DISPOSITIVO
+ESO ES HACER UNA APLICACIÓN REALMENTE RESPONSIVE QUE SE ADAPTA A LA PANTALLA DEL DISPOSITIVO EN
+EL QUE CORRE LA APLICACIÓN*/
+/*EM CUANDO HACEMOS REFERENCIA AL TAMAÑO DE FUENTE RELATIVO AL PADRE DONDE ESTA CONTENIDO ESTE ELEMENTO CON
+EL TAMAÑO EN EM*/
+/*em y rem son las que más se suelen utilizar al aplicar diseño respinsivo*/
