@@ -1,0 +1,23 @@
+/*https://codepen.io/enxaneta/full/adLPwv*//* pagina visualizar y sacar : Properties for the flex container y probar posiciones*/
+.contenedor{
+    background-color: yellow;
+    padding: 0.5rem;
+
+    gap:0.5rem;/*La propiedad gap controla explícitamente el espacio entre los elementos flexibles. Aplica ese espaciado solo entre elementos que no están en los bordes exteriores. contenedor { display: flex;... espacio: 10px; espacio: 10px 20px; /* espacio de columna de espacio de fila  espacio de fila: 10px; espacio de columna: 20px; }*/
+    min-height:5rem;/*le da un minimo de height para poder hucarlos dentro del contenedor*/
+      /*El eje principal 
+    utiliza la propiedad justify-content*/
+    justify-content: center;
+    justify-content: start;/*a principio*/
+    justify-content: end;/*al final*/
+    justify-content: space-between;/*el espacio restante lo distribulle entre los huecos que hay entre los elementos*/
+    justify-content: space-around;/*distribuye de manera equitativa alrededor de cada elemento*/
+    justify-content: space-evenly;/*lo distribulle al ancho equitativamente al ancho que se le va dando al scroll*/
+        /*Eje secundario*/
+        align-items: center;
+        /*flex-direction: row;/*filas el eje principal es el horizontal*/
+        /*flex-direction: column;/*columnas el eje principal se vuelto el principal*/
+        flex-wrap: wrap;/*redistribulle esteticamente los div en el contenedor principal*/
+}
+.item{background-color: salmon;
+    padding: 0.25rem;}
