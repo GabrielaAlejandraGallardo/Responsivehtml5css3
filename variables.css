@@ -1,0 +1,16 @@
+:root {
+    --color-principal: rgb(60, 190, 179); 
+    --ancho-principal: 250px;} /*seudoclase root donde se definen las variables
+utilizando doble guión medio al inicio del identificador y el valor de la propiedad*/
+
+.titulo{color: var(--color-principal)/* red*/;}/*asigno a la propiedades color de la
+clase titulo 
+la variable creada en :root con valor para esa propiedad
+ y toma el valor para esa propiedad*/
+ /*osea dicho de otro modo asigno el valor de la variable especificada*/
+.footer{color:rgb(189, 22, 189);}
+.contenedor{
+    background-color: rgb(218, 228, 188);
+    padding: 1rem;
+    max-width: var(--ancho-principal) /*250px*/;
+}
