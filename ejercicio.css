@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+   
+}
+
+.contenedor{
+ /*   display: grid;
+    grid-template-columns: 20px 80px;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    gap: 10px;*/
+  display: grid;
+  grid-template-columns:200px 600px;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 5px;
+
+  }
+.contenedor  > div {
+    background-color: rgba(234, 220, 220, 0.8);
+    text-align: center;
+    padding: 5px;
+    font-size: 10px; height: auto; }
+  
+.item{text-align: center;margin: 5px;width: auto;height: auto;}
+.elementoSuperior{background-color: aqua;}
+.elementoInferior{background-color: rgb(190, 228, 215);}
+.elementoMedio{background-color: rgb(223, 224, 161);}
+/*.titulosBarraLatIzquierda{position: relative;}*/
+
+/*.contenedor,*/#barraLateralIzquierda{
+    flex-wrap: wrap;
+    width: auto;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(154, 182, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 0.2em;
+  /*  padding:0.2em;*/
+}
+
+/*.contenedor,*/#seccionPrincipal {
+  /*  padding:0.2em;
+    /*flex-grow: 2;*/
+     justify-content: center;
+}
+.it{
+	margin:0; 
+	padding:10px; 
+/*	width:100px;
+	height:100px;*/
+	-webkit-align-items: center;
+	-ms-flex-align:center;
+	align-items: center;
+	}
+/*.it p{width:100%; text-align:center; color:#fff;}
+.it,#seccionPrincipal{flex:0% 15 0; }
+.it,#LateralIzquierda{flex: 0% 9 0;   flex-wrap: wrap;}*/
+@media (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    .seccionPrincipal {
+        flex-grow: 15;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .barraLateralIzquierda {
+        
+        flex-grow: 9;
+        flex-direction: row;
+        align-items: center;
+    }
+
+   
+}
+ 
+   
+/*La barra lateral izquierda se muestre como una navegación en la parte inferior
+
+La disposición de los elementos de la barra lateral se vuelva horizontal
+
+(Tip: Trabaja con la propiedad flex-direction)*/ 
